@@ -638,10 +638,13 @@ nav {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: transform 250ms ease;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .item-portfolio:hover .overlay-portfolio {
   transform: translatey(0);
+  opacity: 1;
 }
 
 .overlay-portfolio p {
@@ -676,4 +679,51 @@ nav {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.9;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 581px;
+  min-width: 528px;
+  padding: 50px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: var(--primary-color-white);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon-close {
 }
