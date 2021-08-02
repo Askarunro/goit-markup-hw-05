@@ -337,6 +337,23 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: absolute;
+  bottom: 0px;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-color-white);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* .label-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 370px;
   height: 70px;
@@ -350,7 +367,7 @@ nav {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
+} */
 
 /* sectiont team */
 
@@ -493,10 +510,10 @@ nav {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .box-join {
-  padding-top: 12px;
   margin-left: 70px;
 }
 
@@ -618,16 +635,13 @@ nav {
   position: absolute;
   top: 0;
   color: var(--primary-color-white);
-  background-image: linear-gradient(
-    rgba(33, 150, 243, 0.9),
-    rgba(33, 150, 243, 0.9)
-  );
+  background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: transform 250ms ease;
 }
 
 .item-portfolio:hover .overlay-portfolio {
-  transform: translateX(0);
+  transform: translatey(0);
 }
 
 .overlay-portfolio p {
@@ -645,8 +659,8 @@ nav {
   border-top: 0px;
   padding: 20px 24px;
   /* position: absolute;
-  z-index: 1;
   bottom: 0; */
+  z-index: 1;
 }
 
 .subtitle-list {
