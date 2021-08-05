@@ -630,8 +630,8 @@ nav {
 .item-portfolio {
   margin: 15px;
   width: calc((100% - 90px) / 3);
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
 }
 
 .item-portfolio:hover {
@@ -661,12 +661,14 @@ nav {
 } */
 
 .overlay-portfolio {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 63px 24px;
-  position: absolute;
-  top: 0;
+
   color: var(--primary-color-white);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
@@ -683,6 +685,11 @@ nav {
 .overlay-portfolio p {
   font-size: 18px;
   line-height: 1.56;
+}
+
+.box-test {
+  position: relative;
+  overflow: hidden;
 }
 
 /* .link-portfolio img {
