@@ -763,7 +763,7 @@ nav {
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .backdrop {
@@ -774,10 +774,8 @@ nav {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-}
-
-.backdrop.is-hidden .modal {
+  /* opacity: 1; */
+  pointer-events: none;
 }
 
 .modal {
@@ -808,7 +806,5 @@ nav {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-
-.icon-close {
+  pointer-events: visible;
 }
